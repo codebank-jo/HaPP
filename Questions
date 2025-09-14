@@ -1,0 +1,45 @@
+🧩 Requirement Stage
+- Engages stakeholders to define functional needs (e.g. patient management, consultations, wearable integration).
+- Identifies non-functional requirements like scalability, security, and compliance (HIPAA/GDPR).
+- Flags early risks such as data ownership and integration complexity.
+🧪 Design Stage
+- Selects the architectural style (microservices + event-driven).
+- Defines service boundaries, data flow, and API contracts.
+- Plans for modularity, fault tolerance, and future scalability.
+🚀 Deployment Stage
+- Designs CI/CD pipelines and infrastructure (e.g. Docker, Kubernetes).
+- Implements monitoring, logging, and rollback strategies.
+- Ensures secure deployment and performance tuning.
+
+ Risk/Concern: Data Ownership Ambiguity
+- Context: Wearables collect sensitive health data (e.g., heart rate, steps).
+- Architect’s Responsibility: Clarify who owns and controls this data — the user, the device vendor, or the healthcare platform — to avoid legal, ethical, and compliance issues (especially under HIPAA/GDPR).
+This concern is mapped directly to the Requirement Stage of the SDLC, showing thoughtful anticipation of real-world challenges. Additional risks like operational complexity in microservices and latency in real-time alerts are also discussed in later stages. So yes, the assignment meets this rubric criterion with clarity and relevance.
+
+
+🧠 Hybrid Architecture: Microservices + Layered + Data-Driven
+✅ 1. Microservices Architecture
+- Each core feature is built as an independent service:
+- Patient Management Service
+- Consultation Service (video/chat)
+- Wearable Integration Service
+- AI Recommendation Service
+- Auth & Notification Services
+- Benefits: Scalability, fault isolation, parallel development
+
+✅ 2. Layered Architecture (Inside Each Microservice)
+Each microservice follows a clean internal structure:
+- Presentation Layer: API endpoints or UI adapters
+- Business Logic Layer: Core processing and rules
+- Data Access Layer: Interfaces with databases or external APIs
+- Benefits: Separation of concerns, maintainability, testability
+
+✅ 3. Data-Driven Architecture
+- The system is designed around data flow and intelligence:
+- Wearables stream biometric data → stored in time-series DB
+- AI engine consumes historical + real-time data → generates insights
+- Patient records and consultation logs feed into analytics dashboards
+- Benefits: Real-time decision-making, personalized recommendations, predictive alerts
+
+
+Scalability > Scalability
