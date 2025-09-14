@@ -13,10 +13,12 @@
 - Wearable Device Integration
 
 🛠️ Slide 3: Architect’s Role in SDLC
-|Stage  | Responsibilities | 
+
+| Stage  | Responsibilities | 
 | Requirement | Define use cases, compliance, integration points | 
 | Design | Choose architecture, define services, plan scalability  | 
 | Deployment| CI/CD setup, monitoring, rollback strategies | 
+
 - Risk: Data ownership ambiguity with wearables
 
 🧱 Slide 4: Architectural Pattern Choice
